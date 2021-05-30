@@ -1,4 +1,4 @@
-# SS 43455 S5-NEO Canada Rev0.0 NVRAM 20151002
+# SS 43455 S5-NEO Rev0.0 NVRAM 20151002
 # tuned 5G PA parameter
 
 NVRAMRev=$Rev: 498373 $
