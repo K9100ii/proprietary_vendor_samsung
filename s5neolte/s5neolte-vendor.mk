@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
-    vendor/samsung/s5neolte/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
     vendor/samsung/s5neolte/proprietary/etc/sec_s3fwrn7_rfreg.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/sec_s3fwrn7_rfreg.bin \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_blob \
@@ -43,15 +42,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_blob \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_mfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_mfg.txt \
     vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_net.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt \
-    vendor/samsung/s5neolte/proprietary/lib/hw/camera.vendor.universal7580.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.universal7580.so \
-    vendor/samsung/s5neolte/proprietary/lib/hw/sensors.universal7580.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.universal7580.so \
-    vendor/samsung/s5neolte/proprietary/lib/libexynoscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynoscamera.so \
-    vendor/samsung/s5neolte/proprietary/lib/libinvensense_hal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libinvensense_hal.so \
-    vendor/samsung/s5neolte/proprietary/lib/libmllite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmllite.so \
-    vendor/samsung/s5neolte/proprietary/lib/libmplmpu.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmplmpu.so \
-    vendor/samsung/s5neolte/proprietary/lib/libsec-ril-dsds.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsec-ril-dsds.so \
-    vendor/samsung/s5neolte/proprietary/lib/libsec-ril.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsec-ril.so \
-    vendor/samsung/s5neolte/proprietary/lib/libyasalgo.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libyasalgo.so \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/bcm43455.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43455.hcd \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/fimc_is_fd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_fd.bin \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/fimc_is_fw2_3p3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_fw2_3p3.bin \
@@ -59,3 +54,23 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/sec_s3fwrn7_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3fwrn7_firmware.bin \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/setfile_3p3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3p3.bin \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/setfile_5e3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_5e3.bin
+
+PRODUCT_PACKAGES += \
+    camera.vendor.universal7580 \
+    sensors.universal7580 \
+    libexynoscamera \
+    libinvensense_hal \
+    libmllite \
+    libmplmpu \
+    libyasalgo \
+    libengmode_client \
+    libril \
+    libsec-ril \
+    libsemnativecarrierfeature \
+    libvkmanager_vendor \
+    vendor.samsung.hardware.radio.bridge@2.0 \
+    vendor.samsung.hardware.radio.channel@2.0 \
+    vendor.samsung.hardware.radio@2.0 \
+    vendor.samsung.hardware.radio@2.1 \
+    cbd \
+    rild
