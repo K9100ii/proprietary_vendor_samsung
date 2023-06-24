@@ -9,13 +9,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/vendor/bin/gps.cer:$(TARGET_COPY_OUT_VENDOR)/bin/gps.cer
 
 PRODUCT_PACKAGES += \
-    gps.universal7580 \
     libhwjpeg \
-    libprotobuf-cpp-fl26 \
     libsensorlistener \
     libuniplugin \
     libGLES_mali \
+    gps.universal7580 \
     libfloatingfeature \
+    libprotobuf-cpp-fl26 \
     libsecnativefeature \
     libwvdrmengine \
     gpsd
