@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/s5neolte
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/s5neolte/proprietary/etc/sec_s3fwrn7_rfreg.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/sec_s3fwrn7_rfreg.bin \
     vendor/samsung/s5neolte/proprietary/vendor/app/020a0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/020a0000000000000000000000000000.drbin \
     vendor/samsung/s5neolte/proprietary/vendor/app/FFFFFFFF000000000000000000000001.drbin:$(TARGET_COPY_OUT_VENDOR)/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tlbin \
@@ -32,21 +33,20 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
     vendor/samsung/s5neolte/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
-    vendor/samsung/s5neolte/proprietary/etc/sec_s3fwrn7_rfreg.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/sec_s3fwrn7_rfreg.bin \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_blob \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_clm.blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_clm.blob \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin_blob \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_blob \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_mfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_net.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt \
     vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/s5neolte/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_blob \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_clm.blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_clm.blob \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin_blob \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_blob \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_mfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/s5neolte/proprietary/vendor/etc/wifi/nvram_net.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/bcm43455.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43455.hcd \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/fimc_is_fd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_fd.bin \
     vendor/samsung/s5neolte/proprietary/vendor/firmware/fimc_is_fw2_3p3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_fw2_3p3.bin \
