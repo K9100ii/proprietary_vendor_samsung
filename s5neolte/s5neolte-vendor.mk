@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
     libyasalgo \
     libengmode_client \
     libril \
+    libsec-ril-dsds \
     libsec-ril \
     libsemnativecarrierfeature \
     libvkmanager_vendor \
